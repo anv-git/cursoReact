@@ -1,16 +1,13 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom'
 import GoodMorning from './components/GoodMorning'
-import Multi, { GoodNight} from './components/multiple'
-
-const container = document.getElementById('root');
-const root = createRoot(container);
+import Multi, { GoodNight } from './components/multiple'
 
 
-root.render(
+
+ReactDOM.render(
     <div>
         <GoodMorning name="Ana"/>
         <Multi.GoodAfternoon name="Maria"/>
         <GoodNight name="Mia"/>
-    </div>
-)
+    </div>, document.getElementById('root'))
