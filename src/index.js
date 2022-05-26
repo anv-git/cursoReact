@@ -1,7 +1,9 @@
 import React from 'react'
-import ReactDOM  from 'react-dom'
+import { createRoot } from 'react-dom/client';
 
-import First from './components/First'
+import GoodMorning from './components/GoodMorning'
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(<First />, document.getElementById('root'))
+root.render(<GoodMorning name="Maria"/>)
