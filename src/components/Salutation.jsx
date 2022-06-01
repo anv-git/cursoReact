@@ -26,8 +26,10 @@ export default class Salutation extends Component {
             <div>
                 <h1>{type} {name}!</h1>
                 <hr />
-                <input type="text" placeholder="Type..." value={type} onChange={this.setType} />
-                <input type="text" placeholder="Name..." value={name} onChange={this.setName} />
+                <input type="text" placeholder="Type..." 
+                value={type} onChange={this.setType} />
+                <input type="text" placeholder="Name..."
+                 value={name} onChange={this.setName} />
             </div>
         )
     }
